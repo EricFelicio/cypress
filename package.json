@@ -1,5 +1,33 @@
 {
+  "scripts": {
+    "cypress": "cypress open",
+    "cypress:headless": "cypress run --headless",
+    
+    "prodrun": "cypress run --config baseUrl=https://clipp360.com.br/#/",
+    "homologrun": "cypress run --config baseUrl=https://homolog.clipp360.com.br/#/",
+    "stagingrun": "cypress run --config baseUrl=http://staging.clipp360.com.br:8000/#/",
+    "localrun": "cypress run --config baseUrl=http://clipp360.local:8000/#/",
+
+    "prodopen": "cypress open --config baseUrl=https://clipp360.com.br/#/",
+    "homologopen": "cypress open --config baseUrl=https://homolog.clipp360.com.br/#/",
+    "stagingopen": "cypress open --config baseUrl=http://staging.clipp360.com.br:8000/#/",
+    "localopen": "cypress open --config baseUrl=http://clipp360.local:8000/#/"
+  },
   "devDependencies": {
-    "cypress": "^10.1.0"
-  }
+    "@faker-js/faker": "^6.0.0",
+    "cypress": "^9.7.0",
+    "cypress-file-upload": "^5.0.8",
+    "cypress-localstorage-commands": "^1.4.0"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "leite": "^0.2.0"
+  },
+  "name": "e2e",
+  "version": "^10.1.0",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }

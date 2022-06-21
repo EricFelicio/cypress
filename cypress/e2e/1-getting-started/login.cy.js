@@ -3,7 +3,7 @@
 context('acessar_link', () => {
 
   it('acessar_link', function() {
-    cy.visit('http://staging.clippfacil.com.br:8000/#/login/');
+    cy.visit('/login/');
   });
 
   it('login', function() {
